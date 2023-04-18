@@ -1,0 +1,23 @@
+@media (max-width: 500px) {
+    .rating {
+        width: 350px;
+        height: 350px;
+        padding: 20px;
+        &__circle, &__star{
+            width: 45px;
+            height: 45px;
+        }
+        &__text {
+            font-size: 25px;
+            margin-top: 15px;
+            &_small {
+                font-size: 15px;
+                line-height: 20px;
+            }
+        }
+    }
+    .btn {
+        width: 310px;
+        height: 45px;
+    }
+}

@@ -27,7 +27,7 @@ body {
     transform: translate(-50%, -50%);
     background: linear-gradient(to bottom, hsl(213, 19%, 18%), hsl(216, 12%, 8%));
     &_thanks {
-        
+        display: none;
     }
     &__circle, &__star {
         display: flex;
@@ -47,6 +47,7 @@ body {
             background-color: hsl(25, 97%, 53%);
         }
         &_active {
+            color: hsl(0, 0%, 100%);
             background-color: hsl(217, 12%, 63%);
         }
     }
@@ -62,11 +63,30 @@ body {
             font-weight: 400;
             margin-top: 10px;
         }
+        &_center {
+            text-align: center;
+        }
     }
     &__wrapper {
         display: flex;
         justify-content: space-between;
         margin-top: 20px;
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    &__sum {
+        width: 200px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: hsl(25, 97%, 53%);
+        background-color: hsl(213, 19%, 18%);
+        border-radius: 30px;
+        margin: 0 auto;
+        margin-top: 30px;
     }
 }
 
@@ -80,8 +100,11 @@ body {
     margin-top: 20px;
     background-color: hsl(25, 97%, 53%);
     transition: .3s all;
+    cursor: pointer;
     &:hover {
         color: hsl(25, 97%, 53%);
         background-color: hsl(0, 0%, 100%)
     }
 }
+
+@import 'media';
